@@ -5,6 +5,7 @@ const playintegrity = google.playintegrity('v1');
 const packageName = 'gr.nikolasspyr.integritycheck'
 const privatekey = JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS)
 
+
 async function getTokenResponse(token) {
 
     let jwtClient = new google.auth.JWT(
@@ -43,12 +44,11 @@ module.exports = async (req, res) => {
     getTokenResponse(token)
         .then(data => {
             res.status(200).send(data)
+            return
         })
         .catch(e => {
             console.log(e)
             res.status(400).send({ 'error': 'Google API error: ' + e.message })
+            return
         });
-
-
-
 }
