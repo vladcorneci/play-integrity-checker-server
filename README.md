@@ -6,7 +6,7 @@ This app is coded for use in [Vercel](https://vercel.com/). To set up yourslef:
 1) Fork this repository and add it to Vercel
 2) Go to Settings -> Environment Variables on Vercel and set:
 - `PACKAGE_NAME` to your app package name
-- `GOOGLE_APPLICATION_CREDENTIALS` to the json contents of the service account on your Google Cloud project. Make sure it's the same project you linked on you Play Console
+- `GOOGLE_APPLICATION_CREDENTIALS` to the json contents of the service account on your Google Cloud project. Make sure it's the same project you linked on your Play Console
 
 ## How to set up Google Cloud
 1) Make a new project
