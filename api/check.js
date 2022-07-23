@@ -37,7 +37,7 @@ module.exports = async (req, res) => {
     const { token = 'none' } = req.query
 
     if (token == 'none') {
-        res.status(400).send({ 'error': 'Error: No token provided' })
+        res.status(400).send({ 'error': 'No token provided' })
         return
     }
 
@@ -48,7 +48,7 @@ module.exports = async (req, res) => {
         })
         .catch(e => {
             console.log(e)
-            res.status(400).send({ 'error': 'Google API error: ' + e.message })
+            res.status(400).send({ 'error': 'Google API error. Google said: ' + e.message })
             return
         });
 }
