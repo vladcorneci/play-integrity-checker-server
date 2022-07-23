@@ -1,20 +1,20 @@
 # Play Integrity API Checker Server
 Node-js server for the [Play Inegrity API Checker App](https://github.com/1nikolas/play-integrity-checker-app/)
 
-# Setup
+## Setup
 This app is coded for use in [Vercel](https://vercel.com/). To set up yourslef:
 1) Fork this repository and add it to Vercel
 2) Go to Settings -> Environment Variables on Vercel and set:
 - `PACKAGE_NAME` to your app package name
 - `GOOGLE_APPLICATION_CREDENTIALS` to the json contents of the service account on your Google Cloud project. Make sure it's the same project you linked on you Play Console
 
-# How to set up Google Cloud
+## How to set up Google Cloud
 1) Make a new project
 2) Go to APIs & Services -> Enabled APIs & Services -> Enable APIs & Services and enable the *Play Integrity API*
 3) On the Google Play Integrity API page go to Credentials -> Create Credentials -> Service Accoutnt. Set a name and leave everything to the default.
 4) Go to Keys -> Add Key -> Create new key. The json that downloads automactially is the json you need for the Environment Variable.
 
-# License
+## License
 
 MIT License
 
