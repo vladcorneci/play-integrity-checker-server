@@ -48,7 +48,7 @@ module.exports = async (req, res) => {
         })
         .catch(e => {
             console.log(e)
-            res.status(400).send({ 'error': 'Google API error. Google said: ' + e.message })
+            res.status(200).send({ 'error': 'Google API error.\n' + e.message })
             return
         });
 }
